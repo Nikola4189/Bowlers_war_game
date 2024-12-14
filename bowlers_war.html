@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bowler's War</title>
+</head>
+<body class="m-0 bg-black">
+
+    <div class="fixed text-white text-sm ml-2 mt-1 select-none">
+        <span>Score: </span>
+        <span id="scoreElement">0</span>
+    </div>
+
+    <div id="startDialog" class="fixed inset-0 flex items-center justify-center select-none bg-white">
+        <div id="card" class="backdrop-blur-md max-w-md w-full p-6 text-center">
+            <h2 id="bigScoreElement" class="text-4xl font-bold leading-none">0</h2>
+            <p id="point" class="text-sm text-gray-700 mb-4">Points</p>
+            <div>
+                <button id="startBtn" class="box-decoration-clone bg-gradient-to-r from-indigo-600 to-pink-500 px-2 text-white text-sm w-full py-3 rounded-full">Start War</button>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="play_board"></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="game.js"></script>
+</body>
+</html>
